@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Sequence Transition with Canvas2D</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script>
+      document.documentElement.className = "js";
+    </script>
+  </head>
+  <body class="loading">
+    <main>
+      <header class="frame">
+        <h1 class="frame__title">
+          Image Sequence Transition <span>with Canvas2D</span>
+        </h1>
+       
+      </header>
+      <div id="app">
+        <div class="content">
+          <div class="switcher-container">
+            <div class="switcher-progress">1.00</div>
+            <div class="switcher">
+              <div class="switcher-button-wrapper">
+                <button style="background: #0e0d0d" data-state="1" class="btn"></button>
+                <p>State 1</p>
+              </div>
+              <div class="switcher-button-wrapper">
+                <button style="background: #3f3c3c" data-state="2" class="btn"></button>
+                <p>State 2</p>
+              </div>
+              <div class="switcher-button-wrapper">
+                <button style="background: #8f8989" data-state="3" class="btn"></button>
+                <p>State 3</p>
+              </div>
+              <div class="switcher-button-wrapper">
+                <button style="background: #b1abab" data-state="4" class="btn"></button>
+                <p>State 4</p>
+              </div> 
+             <div class="switcher-button-wrapper">
+                <button style="background: #f0eaea" data-state="5" class="btn"></button>
+                <p>State 5</p>
+              </div>
+            </div>
+          </div>
+          <div class="canvas-wrapper">
+            <canvas></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
